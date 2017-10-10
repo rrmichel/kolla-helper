@@ -11,6 +11,9 @@ RUN git clone https://github.com/openstack/kolla-ansible.git /kolla-ansible/
 
 RUN pip install ansible==2.3.0.0 && pip install -r /kolla-ansible/requirements.txt
 
+ADD setup /setup/
+RUN pip install -r /setup/requirements.txt
+
 ADD config /config/
 ADD tools/* /usr/local/sbin/
 

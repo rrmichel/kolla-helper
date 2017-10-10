@@ -1,0 +1,12 @@
+---                                                
+clouds:                                            
+  admin:                                           
+    auth:                                          
+      username: admin                              
+      password: 1KR3Af72kh5XO0We8Hr16qyMsiVrg41q7canNAbS
+      project_name: admin                          
+      auth_url: http://192.168.124.11:5000/v3 
+      project_domain_name: default                 
+      user_domain_name: default                    
+    identity_api_version: 3                        
+    verify: false
