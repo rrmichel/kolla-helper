@@ -10,7 +10,8 @@
 
     docker build docker/ -t kolla-helper:latest
 or
-	build-helper.sh
+
+    build-helper.sh
 
 **Step 3**
 

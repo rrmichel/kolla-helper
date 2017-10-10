@@ -125,7 +125,7 @@ enable_opendaylight_l3: "no"
 #nova_console: "novnc"
 
 # OpenStack services can be enabled or disabled with these options
-#enable_aodh: "no"
+#enable_aodh: "yes"
 #enable_barbican: "no"
 #enable_ceilometer: "no"
 #enable_central_logging: "no"
@@ -137,7 +137,7 @@ enable_cinder: "yes"
 #enable_cinder_backend_hnas_iscsi: "no"
 #enable_cinder_backend_hnas_nfs: "no"
 #enable_cinder_backend_iscsi: "no"
-#enable_cinder_backend_lvm: "yes"
+enable_cinder_backend_lvm: "yes"
 #enable_cinder_backend_nfs: "no"
 enable_cloudkitty: "yes"
 #enable_collectd: "no"
@@ -291,7 +291,7 @@ glance_backend_file: "yes"
 # Enable / disable Cinder backends
 #cinder_backend_ceph: "{{ enable_ceph }}"
 #cinder_backend_vmwarevc_vmdk: "no"
-#cinder_volume_group: "cinder-volumes"
+cinder_volume_group: "cinder-volumes"
 
 # Valid options are [ nfs, swift, ceph ]
 #cinder_backup_driver: "ceph"
