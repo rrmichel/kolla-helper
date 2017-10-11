@@ -1,0 +1,13 @@
+--- a/ansible/roles/cinder/templates/cinder.conf.j2       2017-10-10 14:37:15.785442772 +0200
++++ b/ansible/roles/cinder/templates/cinder.conf.j2       2017-10-11 19:15:03.326644944 +0200
+@@ -67,6 +67,10 @@
+ driver = noop
+ {% endif %}
+ 
++[key_manager]
++#api_class = castellan.key_manager.barbican_key_manager.BarbicanKeyManager
++api_class = cinder.keymgr.barbican.BarbicanKeyManager
++
+ [nova]
+ region_name = {{ openstack_region_name }}
+ interface = internal
